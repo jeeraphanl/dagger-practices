@@ -1,6 +1,7 @@
 package com.naversaybugs.sampledagger.dagger
 
 import android.app.Application
+import android.content.Context
 import dagger.Module
 import dagger.Provides
 import javax.inject.Singleton
@@ -11,5 +12,5 @@ class AppModule(private val application: Application) {
     
     @Provides
     @Singleton
-    fun provideApplication() = application
+    fun provideContext(): Context = application.applicationContext
 }
