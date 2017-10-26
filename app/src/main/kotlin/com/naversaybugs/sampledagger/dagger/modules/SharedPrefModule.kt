@@ -1,4 +1,4 @@
-package com.naversaybugs.sampledagger.dagger
+package com.naversaybugs.sampledagger.dagger.modules
 
 import android.content.Context
 import android.content.SharedPreferences

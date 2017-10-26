@@ -1,9 +1,9 @@
 package com.naversaybugs.sampledagger
 
 import android.app.Application
-import com.naversaybugs.sampledagger.dagger.AppComponent
-import com.naversaybugs.sampledagger.dagger.AppModule
-import com.naversaybugs.sampledagger.dagger.DaggerAppComponent
+import com.naversaybugs.sampledagger.dagger.components.AppComponent
+import com.naversaybugs.sampledagger.dagger.components.DaggerAppComponent
+import com.naversaybugs.sampledagger.dagger.modules.AppModule
 
 class SampleApplication : Application() {
     
