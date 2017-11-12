@@ -1,4 +1,4 @@
-package com.naversaybugs.sampledagger.models.entities
+package com.nsb.sampledagger.models.entities
 
 class House(private val id: String,
             private val name: String,

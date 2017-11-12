@@ -1,6 +1,6 @@
-package com.naversaybugs.sampledagger.dagger.modules
+package com.nsb.sampledagger.dagger.modules
 
-import com.naversaybugs.sampledagger.models.entities.House
+import com.nsb.sampledagger.models.entities.House
 import dagger.Module
 import dagger.Provides
 

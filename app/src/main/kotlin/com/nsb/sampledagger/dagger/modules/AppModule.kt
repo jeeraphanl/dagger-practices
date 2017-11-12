@@ -1,4 +1,4 @@
-package com.naversaybugs.sampledagger.dagger.modules
+package com.nsb.sampledagger.dagger.modules
 
 import android.app.Application
 import android.content.Context

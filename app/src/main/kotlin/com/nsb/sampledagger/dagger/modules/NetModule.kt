@@ -1,8 +1,8 @@
-package com.naversaybugs.sampledagger.dagger.modules
+package com.nsb.sampledagger.dagger.modules
 
 import com.google.gson.Gson
 import com.google.gson.GsonBuilder
-import com.naversaybugs.sampledagger.models.APIs.ApiProvider
+import com.nsb.sampledagger.models.APIs.ApiProvider
 import dagger.Module
 import dagger.Provides
 import okhttp3.OkHttpClient

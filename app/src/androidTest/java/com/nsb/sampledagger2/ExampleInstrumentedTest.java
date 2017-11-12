@@ -1,4 +1,4 @@
-package com.naversaybugs.sampledagger2;
+package com.nsb.sampledagger2;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;

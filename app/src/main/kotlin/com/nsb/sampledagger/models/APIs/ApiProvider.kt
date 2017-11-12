@@ -1,6 +1,6 @@
-package com.naversaybugs.sampledagger.models.APIs
+package com.nsb.sampledagger.models.APIs
 
-import com.naversaybugs.sampledagger.models.entities.House
+import com.nsb.sampledagger.models.entities.House
 import io.reactivex.Observable
 import retrofit2.Response
 import retrofit2.http.GET

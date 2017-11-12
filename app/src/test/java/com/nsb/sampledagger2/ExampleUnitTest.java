@@ -1,4 +1,4 @@
-package com.naversaybugs.sampledagger2;
+package com.nsb.sampledagger2;
 
 import org.junit.Test;
 

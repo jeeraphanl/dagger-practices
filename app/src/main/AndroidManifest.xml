@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-          package="com.naversaybugs.sampledagger">
+          package="com.nsb.sampledagger">
 
     <application
-        android:name=".SampleApplication"
+        android:name="com.nsb.sampledagger.SampleApplication"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
@@ -13,7 +13,7 @@
 
 
         <activity
-            android:name=".MainActivity"
+            android:name="com.nsb.sampledagger.presentations.mvp.login.LoginActivity"
             android:label="@string/app_name"
             android:launchMode="singleTask"
             android:theme="@style/AppTheme"
