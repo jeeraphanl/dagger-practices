@@ -4,6 +4,8 @@ interface LoginContract {
     
     interface View {
         
+        fun initDagger()
+        
         fun showUserName()
     }
     

@@ -1,39 +1,27 @@
-package com.nsb.sampledagger.presentations.mvp.login
+package com.nsb.sampledagger.presentations.mvp.register
 
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
-import android.util.Log
 import com.nsb.sampledagger.SampleApplication
 import com.nsb.sampledagger.dagger.components.DaggerPresenterComponent
 import com.nsb.sampledagger.dagger.components.PresenterComponent
 import com.nsb.sampledagger.dagger.modules.PresenterModule
 import javax.inject.Inject
 
-class LoginActivity : AppCompatActivity(), LoginContract.View {
+class RegisterActivity : AppCompatActivity(), RegisterContract.View {
     
     private lateinit var presenterComponent: PresenterComponent
     
-    @Inject lateinit var presenter: LoginPresenter
+    @Inject lateinit var presenter: RegisterPresenter
     
-    private var number = 0
-    
-    /**
-     * Lifecycle activity
-     */
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        
-        initDagger()
     
-        Log.d("log-dagger", "before: ${number}")
-        number = 55
+        initDagger()
         
-        presenter.saveUserName()
+        presenter.register()
     }
     
-    /**
-     * View interface
-     */
     override fun initDagger() {
     
         presenterComponent = DaggerPresenterComponent
@@ -41,12 +29,11 @@ class LoginActivity : AppCompatActivity(), LoginContract.View {
                 .appComponent(SampleApplication.appComponent)
                 .presenterModule(PresenterModule(this))
                 .build()
-
+    
         presenterComponent.inject(this)
     }
     
-    override fun showUserName() {
-        Log.d("log-dagger", "showUserName")
-        Log.d("log-dagger", "before: ${number}")
+    override fun showRegisterSuccess() {
+    
     }
 }
