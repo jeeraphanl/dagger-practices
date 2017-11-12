@@ -2,7 +2,6 @@ package com.nsb.sampledagger.presentations.mvp.login
 
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
-import android.util.Log
 import com.nsb.sampledagger.SampleApplication
 import com.nsb.sampledagger.dagger.components.DaggerPresenterComponent
 import com.nsb.sampledagger.dagger.components.PresenterComponent
@@ -15,19 +14,12 @@ class LoginActivity : AppCompatActivity(), LoginContract.View {
     
     @Inject lateinit var presenter: LoginPresenter
     
-    private var number = 0
-    
     /**
      * Lifecycle activity
      */
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        
         initDagger()
-    
-        Log.d("log-dagger", "before: ${number}")
-        number = 55
-        
         presenter.saveUserName()
     }
     
@@ -46,7 +38,5 @@ class LoginActivity : AppCompatActivity(), LoginContract.View {
     }
     
     override fun showUserName() {
-        Log.d("log-dagger", "showUserName")
-        Log.d("log-dagger", "before: ${number}")
     }
 }

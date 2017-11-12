@@ -7,8 +7,11 @@ import com.nsb.sampledagger.presentations.mvp.register.RegisterActivity
 import dagger.Component
 
 @UserScope
-@Component(dependencies =  arrayOf(AppComponent::class), modules = arrayOf(
-            PresenterModule::class
+@Component(
+    dependencies =  arrayOf(
+        AppComponent::class
+),  modules = arrayOf(
+        PresenterModule::class
 ))
 
 interface PresenterComponent {
